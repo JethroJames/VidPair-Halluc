@@ -1,0 +1,1978 @@
+[
+  {
+    "id": "action_0002",
+    "segments": [
+      "The child picks up a balloon, ready to {values} it.",
+      "She holds the balloon and {values} it with excitement.",
+      "Afterward, she smiles, having just {values} the balloon."
+    ],
+    "values": [
+      "inflate",
+      "pop",
+      "paint"
+    ]
+  },
+  {
+    "id": "action_0005",
+    "segments": [
+      "The chef stands at the stove, ready to {values} the vegetables.",
+      "He skillfully {values} the vegetables in the pan.",
+      "He serves the dish after having {values} the vegetables."
+    ],
+    "values": [
+      "fry",
+      "boil",
+      "steam"
+    ]
+  },
+  {
+    "id": "action_0010",
+    "segments": [
+      "The child stands by the door, preparing to {values} it.",
+      "She reaches out and {values} the door.",
+      "She steps back, having just {values} the door."
+    ],
+    "values": [
+      "knock on",
+      "open",
+      "close"
+    ]
+  },
+  {
+    "id": "action_0016",
+    "segments": [
+      "The woman stands at the closet, ready to {values} a dress.",
+      "She carefully {values} the dress.",
+      "She leaves the closet, having just {values} the dress."
+    ],
+    "values": [
+      "choose",
+      "hang",
+      "fold"
+    ]
+  },
+  {
+    "id": "action_0021",
+    "segments": [
+      "The woman stands at the sink, about to {values} the dishes.",
+      "She carefully {values} the dishes.",
+      "She puts them away, having just {values} the dishes."
+    ],
+    "values": [
+      "wash",
+      "dry",
+      "stack"
+    ]
+  },
+  {
+    "id": "action_0024",
+    "segments": [
+      "The boy stands at the fridge, about to {values} a bottle.",
+      "He carefully {values} the bottle.",
+      "He puts it back, having just {values} the bottle."
+    ],
+    "values": [
+      "open",
+      "pour",
+      "close"
+    ]
+  },
+  {
+    "id": "action_0026",
+    "segments": [
+      "The woman stands by the table, ready to {values} the cake.",
+      "She skillfully {values} the cake.",
+      "She serves it, having just {values} the cake."
+    ],
+    "values": [
+      "cut",
+      "decorate",
+      "eat"
+    ]
+  },
+  {
+    "id": "action_0027",
+    "segments": [
+      "The man stands at the fire, about to {values} it.",
+      "He carefully {values} the fire.",
+      "He steps back, having just {values} the fire."
+    ],
+    "values": [
+      "light",
+      "tend",
+      "extinguish"
+    ]
+  },
+  {
+    "id": "action_0032",
+    "segments": [
+      "The woman stands at the stove, ready to {values} the soup.",
+      "She carefully {values} the soup.",
+      "She serves it, having just {values} the soup."
+    ],
+    "values": [
+      "stir",
+      "taste",
+      "pour"
+    ]
+  },
+  {
+    "id": "action_0034",
+    "segments": [
+      "The woman stands by the bookshelf, ready to {values} a book.",
+      "She carefully {values} the book.",
+      "She returns it, having just {values} the book."
+    ],
+    "values": [
+      "choose",
+      "read",
+      "shelve"
+    ]
+  },
+  {
+    "id": "action_0037",
+    "segments": [
+      "The man stands at the table, about to {values} the newspaper.",
+      "He carefully {values} the newspaper.",
+      "He puts it down, having just {values} the newspaper."
+    ],
+    "values": [
+      "open",
+      "read",
+      "fold"
+    ]
+  },
+  {
+    "id": "action_0040",
+    "segments": [
+      "The man stands at the grill, ready to {values} the sausages.",
+      "He skillfully {values} the sausages.",
+      "He serves them, having just {values} the sausages."
+    ],
+    "values": [
+      "grill",
+      "turn",
+      "serve"
+    ]
+  },
+  {
+    "id": "color_0032",
+    "segments": [
+      "A man grabs a {values} towel from the bathroom shelf after a shower.",
+      "He dries his hair with the {values} towel.",
+      "The damp {values} towel is hung on a rack to dry."
+    ],
+    "values": [
+      "white",
+      "blue",
+      "yellow"
+    ]
+  },
+  {
+    "id": "color_0042",
+    "segments": [
+      "A girl takes out a {values} sketchbook from her bag during art class.",
+      "She fills the pages of the {values} sketchbook with colorful drawings.",
+      "The {values} sketchbook is placed back in her bag at the end of the day."
+    ],
+    "values": [
+      "purple",
+      "brown",
+      "pink"
+    ]
+  },
+  {
+    "id": "color_0043",
+    "segments": [
+      "A man grabs a {values} flashlight from the shelf during a power outage.",
+      "He uses the {values} flashlight to navigate through the dark hallway.",
+      "The {values} flashlight is placed back on the shelf when the lights come back on."
+    ],
+    "values": [
+      "black",
+      "yellow",
+      "silver"
+    ]
+  },
+  {
+    "id": "color_0047",
+    "segments": [
+      "A woman ties a {values} scarf around her neck before heading out on a snowy day.",
+      "She walks through the snow, the {values} scarf keeping her warm.",
+      "The damp {values} scarf is hung up to dry when she gets home."
+    ],
+    "values": [
+      "red",
+      "gray",
+      "navy"
+    ]
+  },
+  {
+    "id": "color_0048",
+    "segments": [
+      "A girl takes out a {values} water bottle from her bag during soccer practice.",
+      "She drinks from the {values} bottle after a tough game.",
+      "The {values} bottle is placed back in her bag after being refilled."
+    ],
+    "values": [
+      "pink",
+      "green",
+      "white"
+    ]
+  },
+  {
+    "id": "color_0049",
+    "segments": [
+      "A man picks up a {values} alarm clock to adjust the time.",
+      "He places the {values} clock on his bedside table before going to sleep.",
+      "The {values} alarm clock rings loudly to wake him up the next morning."
+    ],
+    "values": [
+      "black",
+      "red",
+      "white"
+    ]
+  },
+  {
+    "id": "color_0052",
+    "segments": [
+      "A boy picks up a {values} frisbee from the grass during a family picnic.",
+      "He throws the {values} frisbee to his sister across the park.",
+      "The {values} frisbee is placed back in the car after the day ends."
+    ],
+    "values": [
+      "blue",
+      "orange",
+      "green"
+    ]
+  },
+  {
+    "id": "color_0058",
+    "segments": [
+      "A woman picks up a {values} umbrella from the stand near the door.",
+      "She walks under the rain, the {values} umbrella shielding her from getting wet.",
+      "The {values} umbrella is left open to dry in the hallway."
+    ],
+    "values": [
+      "red",
+      "navy",
+      "gray"
+    ]
+  },
+  {
+    "id": "dynamic_attribute_0001",
+    "segments": [
+      "A runner starts on a city track, his speed {values} as he passes under streetlights.",
+      "Midway through the race, his running pace {values}, sweat visible on his brow.",
+      "At the finish line, his speed {values}, and he raises his arms in triumph."
+    ],
+    "values": [
+      "gradually increases",
+      "gradually decreases",
+      "remains steady"
+    ]
+  },
+  {
+    "id": "dynamic_attribute_0004",
+    "segments": [
+      "A dog runs across a field, the distance between it and a thrown ball {values} as it sprints.",
+      "The dog leaps, the gap {values}, its ears flapping in the wind.",
+      "Finally, the distance {values} as the dog catches the ball."
+    ],
+    "values": [
+      "shrinks quickly",
+      "shrinks slowly",
+      "remains large"
+    ]
+  },
+  {
+    "id": "dynamic_attribute_0009",
+    "segments": [
+      "A child builds a tower with blocks, the height of the tower {values} as more blocks are added.",
+      "With each careful placement, the structure’s height {values}, wobbling slightly.",
+      "Eventually, the tower’s height {values} as the child runs out of blocks."
+    ],
+    "values": [
+      "increases rapidly",
+      "increases slowly",
+      "stays the same"
+    ]
+  },
+  {
+    "id": "dynamic_attribute_0012",
+    "segments": [
+      "A group of ducks swims across a pond, the distance between them {values} as they search for food.",
+      "Some ducks paddle closer together, the gaps {values}, their reflections shimmering.",
+      "By the end, the distance {values} as they gather near the shore."
+    ],
+    "values": [
+      "narrows",
+      "widens",
+      "remains the same"
+    ]
+  },
+  {
+    "id": "dynamic_attribute_0030",
+    "segments": [
+      "A traffic jam forms on the highway, the number of cars {values} as rush hour begins.",
+      "Horns honk, and the line of vehicles {values}, stretching into the distance.",
+      "After a while, the number of cars {values}, as the road clears."
+    ],
+    "values": [
+      "increases rapidly",
+      "increases slowly",
+      "remains constant"
+    ]
+  },
+  {
+    "id": "dynamic_attribute_0032",
+    "segments": [
+      "A street artist draws with chalk, the length of his chalk piece {values} as the mural grows.",
+      "Color covers the pavement, and the chalk {values}, dust on his hands.",
+      "When the mural is done, the chalk {values}, almost gone."
+    ],
+    "values": [
+      "decreases rapidly",
+      "decreases slowly",
+      "remains unchanged"
+    ]
+  },
+  {
+    "id": "dynamic_attribute_0037",
+    "segments": [
+      "A fisherman casts his net, the number of fish caught {values} as he pulls it in.",
+      "The net tightens, and the fish {values}, splashing in the sunlight.",
+      "When he checks, the number of fish {values}, filling his basket."
+    ],
+    "values": [
+      "increases rapidly",
+      "increases slowly",
+      "remains the same"
+    ]
+  },
+  {
+    "id": "dynamic_attribute_0041",
+    "segments": [
+      "A painter dips her brush in water, the clarity of the water {values} as she rinses off paint.",
+      "The water swirls, its color {values}, turning murky.",
+      "By the end, the clarity {values}, almost opaque."
+    ],
+    "values": [
+      "decreases quickly",
+      "decreases slowly",
+      "remains clear"
+    ]
+  },
+  {
+    "id": "dynamic_attribute_0043",
+    "segments": [
+      "A group of balloons floats upwards, the distance between them {values} as the wind blows.",
+      "Some drift apart, the gaps {values}, colors scattering in the sky.",
+      "Later, the distance {values}, as some balloons pop."
+    ],
+    "values": [
+      "widens quickly",
+      "narrows quickly",
+      "remains unchanged"
+    ]
+  },
+  {
+    "id": "dynamic_attribute_0101",
+    "segments": [
+      "A candle burns in a dark room, the brightness of the flame {values} as the wax melts.",
+      "The flame flickers, its brightness {values}, shadows moving on the walls.",
+      "By the end, the brightness {values}, as the candle burns out."
+    ],
+    "values": [
+      "decreases slowly",
+      "flickers unpredictably",
+      "remains steady"
+    ]
+  },
+  {
+    "id": "dynamic_attribute_0103",
+    "segments": [
+      "A clock tower strikes the hour, the volume of the chimes {values} as they echo through the town.",
+      "The sound fades, the volume {values}, reaching distant streets.",
+      "Eventually, the volume {values}, leaving silence behind."
+    ],
+    "values": [
+      "decreases gradually",
+      "increases briefly",
+      "remains unchanged"
+    ]
+  },
+  {
+    "id": "dynamic_relation_0002",
+    "segments": [
+      "A young woman walks {values} the hospital room, her steps slow and careful.",
+      "She sits down {values} the bed, her eyes moist with emotion.",
+      "After a while, she stands up {values} the bed, taking a deep breath."
+    ],
+    "values": [
+      "to visit her grandmother after surgery in",
+      "to apologize to a friend after an argument in",
+      "to volunteer as a storyteller for children in"
+    ]
+  },
+  {
+    "id": "dynamic_relation_0015",
+    "segments": [
+      "A group of friends gathers {values} the movie theater, laughing loudly.",
+      "They settle in {values} their seats, sharing popcorn.",
+      "After the movie, they chat excitedly {values} the lobby."
+    ],
+    "values": [
+      "to celebrate a birthday at",
+      "to watch a midnight horror premiere at",
+      "to escape the summer heat at"
+    ]
+  },
+  {
+    "id": "dynamic_relation_0024",
+    "segments": [
+      "A painter sets up {values} the city square, easel ready.",
+      "She mixes colors carefully {values} her palette.",
+      "By sunset, she packs up contentedly {values} the square."
+    ],
+    "values": [
+      "to capture the evening skyline in",
+      "to teach a plein air class in",
+      "to sell her artwork to tourists in"
+    ]
+  },
+  {
+    "id": "dynamic_relation_0025",
+    "segments": [
+      "A teenager sneaks {values} the music store, eyes wide with excitement.",
+      "He browses eagerly {values} the guitar section.",
+      "He leaves grinning {values} the store, a new instrument in hand."
+    ],
+    "values": [
+      "to buy his first electric guitar at",
+      "to attend a surprise autograph session at",
+      "to escape a sudden downpour into"
+    ]
+  },
+  {
+    "id": "dynamic_relation_0028",
+    "segments": [
+      "A group of musicians gathers {values} the subway station.",
+      "They perform energetically {values} the platform.",
+      "Crowds applaud enthusiastically {values} the station."
+    ],
+    "values": [
+      "to raise money for charity at",
+      "to promote their new album at",
+      "to celebrate a band member's birthday at"
+    ]
+  },
+  {
+    "id": "dynamic_relation_0031",
+    "segments": [
+      "A young woman enters {values} the gym, determined.",
+      "She works out intensely {values} the treadmill.",
+      "Afterwards, she cools down {values} the locker room."
+    ],
+    "values": [
+      "to prepare for a fitness competition at",
+      "to relieve stress after work at",
+      "to join a group dance class at"
+    ]
+  },
+  {
+    "id": "dynamic_relation_0033",
+    "segments": [
+      "A young man enters {values} the job fair, dressed smartly.",
+      "He speaks confidently {values} the recruiters.",
+      "He leaves hopeful {values} the event."
+    ],
+    "values": [
+      "to seek his first internship at",
+      "to switch careers after graduation at",
+      "to network with industry leaders at"
+    ]
+  },
+  {
+    "id": "dynamic_relation_0036",
+    "segments": [
+      "A girl runs {values} the schoolyard, laughing.",
+      "She joins her friends {values} the swings.",
+      "She waves goodbye {values} the school gate."
+    ],
+    "values": [
+      "to play tag during recess in",
+      "to rehearse for the school festival in",
+      "to meet her mother after class at"
+    ]
+  },
+  {
+    "id": "dynamic_relation_0040",
+    "segments": [
+      "A couple arrives {values} the mountain trail, backpacks ready.",
+      "They hike steadily {values} the rocky path.",
+      "At the summit, they admire the view {values} the peak."
+    ],
+    "values": [
+      "to watch the sunrise together on",
+      "to train for an upcoming hiking competition on",
+      "to celebrate their anniversary on"
+    ]
+  },
+  {
+    "id": "dynamic_relation_0048",
+    "segments": [
+      "A woman steps gracefully {values} the dance studio, tying her shoes.",
+      "She moves rhythmically {values} the music, her focus unwavering.",
+      "She leaves energized {values} the studio, ready for her next session."
+    ],
+    "values": [
+      "to prepare for an upcoming performance at",
+      "to take her first beginner's class at",
+      "to choreograph a routine for a wedding at"
+    ]
+  },
+  {
+    "id": "dynamic_relation_0049",
+    "segments": [
+      "A man walks thoughtfully {values} the museum exhibit, hands in pockets.",
+      "He listens attentively {values} the audio guide, absorbing the history.",
+      "He leaves inspired {values} the exhibit, jotting down notes in his journal."
+    ],
+    "values": [
+      "to learn about ancient civilizations at",
+      "to accompany his child on a school trip at",
+      "to find inspiration for his artwork at"
+    ]
+  },
+  {
+    "id": "location_0001",
+    "segments": [
+      "In the {values}, a person sits quietly on a bench, enjoying the peaceful surroundings and the gentle sound of people moving nearby.",
+      "The person opens a book and starts reading, occasionally looking up to observe the scene around them in the {values}.",
+      "A soft breeze brushes past as the person turns the pages, fully immersed in the calm atmosphere of the {values}."
+    ],
+    "values": [
+      "sunny park",
+      "cozy reading nook",
+      "university library"
+    ]
+  },
+  {
+    "id": "location_0005",
+    "segments": [
+      "In the {values}, a person stands before a mirror, adjusting their clothes and smoothing out wrinkles.",
+      "Sunlight or soft interior lighting illuminates the space as the person checks their appearance from different angles in the {values}.",
+      "Satisfied, the person gives one last look in the mirror before heading out from the {values}."
+    ],
+    "values": [
+      "hotel room",
+      "locker room",
+      "home hallway"
+    ]
+  },
+  {
+    "id": "location_0010",
+    "segments": [
+      "In the {values}, a person sits at a table, sketching in a notebook with colorful pencils.",
+      "Soft light and the gentle hum of the environment inspire creativity in the {values}.",
+      "The person admires their drawing, surrounded by the calm and focus of the {values}."
+    ],
+    "values": [
+      "art studio",
+      "school classroom",
+      "public library"
+    ]
+  },
+  {
+    "id": "location_0013",
+    "segments": [
+      "In the {values}, a person sits at a table, typing on a laptop and occasionally glancing at their phone.",
+      "The gentle buzz of activity and the soft clatter of keys fill the {values}, creating a focused mood.",
+      "The person pauses to stretch, taking in the productive environment of the {values}."
+    ],
+    "values": [
+      "shared workspace",
+      "university library",
+      "coffee shop"
+    ]
+  },
+  {
+    "id": "location_0014",
+    "segments": [
+      "Within the {values}, a person sits on a mat, playing a board game with a friend.",
+      "Laughter and friendly conversation fill the {values}, making the atmosphere light and fun.",
+      "The game ends with smiles and a handshake, both players enjoying their time in the {values}."
+    ],
+    "values": [
+      "living room",
+      "school recreation room",
+      "community center"
+    ]
+  },
+  {
+    "id": "location_0017",
+    "segments": [
+      "Within the {values}, a person stands at a table, arranging flowers in a vase.",
+      "The scent of fresh blooms and the soft rustle of petals fill the {values}, creating a cheerful mood.",
+      "The person steps back to admire the colorful arrangement in the bright {values}."
+    ],
+    "values": [
+      "living room",
+      "hotel lobby",
+      "community center"
+    ]
+  },
+  {
+    "id": "location_0018",
+    "segments": [
+      "In the {values}, a person sits with a friend, sharing a meal and lively conversation.",
+      "The aroma of food and the gentle clink of utensils fill the {values}, making the experience warm and inviting.",
+      "They laugh together, enjoying good company in the friendly {values}."
+    ],
+    "values": [
+      "restaurant",
+      "home dining room",
+      "picnic area"
+    ]
+  },
+  {
+    "id": "location_0019",
+    "segments": [
+      "Within the {values}, a person stands in front of a shelf, browsing through items carefully.",
+      "Soft lighting and the quiet murmur of other people fill the {values}, creating a relaxed shopping atmosphere.",
+      "The person selects an item, satisfied with their choice in the well-stocked {values}."
+    ],
+    "values": [
+      "bookstore",
+      "supermarket",
+      "gift shop"
+    ]
+  },
+  {
+    "id": "location_0021",
+    "segments": [
+      "Within the {values}, a person sits at a table, painting with watercolors on a blank sheet.",
+      "The soft swish of the brush and the gentle hum of the environment inspire creativity in the {values}.",
+      "The person steps back, admiring their artwork in the colorful and inviting {values}."
+    ],
+    "values": [
+      "art studio",
+      "school classroom",
+      "community center"
+    ]
+  },
+  {
+    "id": "location_0027",
+    "segments": [
+      "Within the {values}, a person sits at a table, playing a card game with friends.",
+      "The sound of shuffling cards and friendly chatter fill the {values}, making the atmosphere relaxed and enjoyable.",
+      "The game ends with laughter and high-fives, everyone happy in the fun {values}."
+    ],
+    "values": [
+      "community center",
+      "student dormitory",
+      "picnic area"
+    ]
+  },
+  {
+    "id": "location_0028",
+    "segments": [
+      "In the {values}, a person stands at a whiteboard, explaining a concept to an attentive audience.",
+      "The soft squeak of markers and the focused expressions create a learning atmosphere in the {values}.",
+      "The person smiles as the group nods in understanding, enjoying the sense of progress in the {values}."
+    ],
+    "values": [
+      "classroom",
+      "conference room",
+      "community meeting hall"
+    ]
+  },
+  {
+    "id": "location_0030",
+    "segments": [
+      "In the {values}, a person stands by a window, taking photographs of the scenery outside.",
+      "The soft click of the camera and the changing light create a sense of anticipation in the {values}.",
+      "The person reviews the pictures, pleased with the beautiful views captured from the {values}."
+    ],
+    "values": [
+      "hotel room",
+      "mountain cabin",
+      "office building"
+    ]
+  },
+  {
+    "id": "location_0032",
+    "segments": [
+      "In the {values}, a person stands at a sink, washing their hands thoroughly.",
+      "The sound of running water and the clean scent of soap fill the {values}, creating a fresh and hygienic atmosphere.",
+      "The person dries their hands, ready to continue their day in the well-kept {values}."
+    ],
+    "values": [
+      "restaurant restroom",
+      "school washroom",
+      "home bathroom"
+    ]
+  },
+  {
+    "id": "location_0035",
+    "segments": [
+      "Within the {values}, a person stands at a counter, pouring a glass of juice from a pitcher.",
+      "The bright color of the drink and the clink of ice create a refreshing mood in the {values}.",
+      "The person takes a sip, enjoying the cool flavor in the pleasant {values}."
+    ],
+    "values": [
+      "kitchen",
+      "hotel breakfast area",
+      "outdoor picnic spot"
+    ]
+  },
+  {
+    "id": "location_0038",
+    "segments": [
+      "In the {values}, a person sits at a table, assembling a small electronic gadget.",
+      "The soft click of components and the person's focused gaze create a sense of concentration in the {values}.",
+      "The person tests the finished gadget, satisfied with their work in the well-equipped {values}."
+    ],
+    "values": [
+      "home workshop",
+      "school lab",
+      "makerspace"
+    ]
+  },
+  {
+    "id": "location_0039",
+    "segments": [
+      "Within the {values}, a person sits with a friend, sharing a pot of tea and quiet conversation.",
+      "The gentle clink of cups and the warmth of the drink create a soothing atmosphere in the {values}.",
+      "The person smiles, enjoying good company in the peaceful {values}."
+    ],
+    "values": [
+      "tearoom",
+      "garden gazebo",
+      "living room"
+    ]
+  },
+  {
+    "id": "number_0008",
+    "segments": [
+      "A teacher hands out {values} worksheets to each student.",
+      "The students complete the {values} worksheets during class.",
+      "All {values} worksheets are collected at the end."
+    ],
+    "values": [
+      "one",
+      "two",
+      "three"
+    ]
+  },
+  {
+    "id": "number_0016",
+    "segments": [
+      "A chef chops {values} onions for the soup.",
+      "He adds the {values} onions to the pot.",
+      "The smell of the {values} onions fills the kitchen."
+    ],
+    "values": [
+      "one",
+      "two",
+      "three"
+    ]
+  },
+  {
+    "id": "number_0022",
+    "segments": [
+      "A child draws {values} stars on her paper.",
+      "She colors the {values} stars with crayons.",
+      "The {values} stars make her drawing sparkle."
+    ],
+    "values": [
+      "one",
+      "two",
+      "five"
+    ]
+  },
+  {
+    "id": "number_0024",
+    "segments": [
+      "A girl collects {values} seashells at the beach.",
+      "She examines the {values} seashells closely.",
+      "The {values} seashells are added to her collection."
+    ],
+    "values": [
+      "one",
+      "two",
+      "three"
+    ]
+  },
+  {
+    "id": "number_0033",
+    "segments": [
+      "A girl puts {values} rings on her fingers.",
+      "She shows her friends the {values} rings.",
+      "The {values} rings sparkle in the sunlight."
+    ],
+    "values": [
+      "two",
+      "three",
+      "four"
+    ]
+  },
+  {
+    "id": "number_0039",
+    "segments": [
+      "A girl chooses {values} dresses to try on.",
+      "She models the {values} dresses in front of the mirror.",
+      "The {values} dresses are hung back on the rack after shopping."
+    ],
+    "values": [
+      "one",
+      "two",
+      "three"
+    ]
+  },
+  {
+    "id": "object_0001",
+    "segments": [
+      "Morning light streams through the window as a researcher places a {values} on the cluttered desk, surrounded by stacks of papers.",
+      "She pauses to interact with the {values}, the soft hum of equipment filling the air.",
+      "As the day progresses, the {values} remains in the frame, a silent witness to bursts of inspiration and quiet concentration."
+    ],
+    "values": [
+      "microscope",
+      "hourglass",
+      "desk lamp"
+    ]
+  },
+  {
+    "id": "object_0004",
+    "segments": [
+      "A student sits at a sunlit table, setting a {values} beside an open laptop, surrounded by scattered notes.",
+      "During a moment of reflection, the {values} is handled gently, offering a brief escape from the screen.",
+      "When the study session ends, the {values} is left in place, a reminder of focused effort."
+    ],
+    "values": [
+      "stress ball",
+      "calculator",
+      "watercolor set"
+    ]
+  },
+  {
+    "id": "object_0008",
+    "segments": [
+      "A gardener lays a {values} on a stone path, the morning dew sparkling on green leaves all around.",
+      "Between tending to plants, the {values} is picked up, hands dirt-streaked and content.",
+      "At sunset, the {values} rests among fresh blooms, a testament to a day’s gentle work."
+    ],
+    "values": [
+      "watering can",
+      "garden trowel",
+      "sun hat"
+    ]
+  },
+  {
+    "id": "object_0009",
+    "segments": [
+      "A doctor places a {values} on a spotless desk, sunlight reflecting off white walls and medical charts.",
+      "Between consultations, the {values} is consulted or adjusted, the room filled with quiet focus.",
+      "As the shift ends, the {values} is returned to its place, ready for the next patient."
+    ],
+    "values": [
+      "stethoscope",
+      "calendar",
+      "tablet"
+    ]
+  },
+  {
+    "id": "object_0012",
+    "segments": [
+      "A scientist places a {values} on a stainless steel lab bench, surrounded by glassware and glowing monitors.",
+      "During experiments, the {values} is used with careful precision, fingers steady and eyes focused.",
+      "At the end of the day, the {values} is left in place, reflecting the pursuit of discovery."
+    ],
+    "values": [
+      "pipette",
+      "safety goggles",
+      "laptop"
+    ]
+  },
+  {
+    "id": "object_0014",
+    "segments": [
+      "A programmer places a {values} next to a glowing keyboard, the room illuminated only by screens and city lights.",
+      "Between lines of code, the {values} is used for quick reference or a moment of distraction.",
+      "As night deepens, the {values} remains on the desk, a silent companion to late-night problem-solving."
+    ],
+    "values": [
+      "coffee mug",
+      "reference manual",
+      "stress cube"
+    ]
+  },
+  {
+    "id": "object_0015",
+    "segments": [
+      "A photographer sets a {values} on a wooden table in a sun-dappled studio, canvases and prints scattered nearby.",
+      "During editing, the {values} is handled with care, each movement deliberate and precise.",
+      "As the session ends, the {values} is left in the soft glow of golden hour."
+    ],
+    "values": [
+      "memory card case",
+      "lens cleaning cloth",
+      "portfolio book"
+    ]
+  },
+  {
+    "id": "object_0016",
+    "segments": [
+      "A student places a {values} on a library desk, the quiet hum of study filling the space.",
+      "During moments of deep focus, the {values} is used or held, offering support through challenging chapters.",
+      "As the afternoon fades, the {values} remains among open books and scattered notes."
+    ],
+    "values": [
+      "highlighter",
+      "flash drive",
+      "energy bar"
+    ]
+  },
+  {
+    "id": "object_0017",
+    "segments": [
+      "A painter lays a {values} on a sunlit windowsill, the scent of fresh paint in the air.",
+      "Between brushstrokes, the {values} is picked up or adjusted, hands stained with color.",
+      "As the canvas fills, the {values} sits quietly, part of the artist’s creative ritual."
+    ],
+    "values": [
+      "palette",
+      "reference photo",
+      "music speaker"
+    ]
+  },
+  {
+    "id": "object_0018",
+    "segments": [
+      "A teacher places a {values} on the corner of a tidy classroom desk, sunlight streaming through tall windows.",
+      "Throughout the lesson, the {values} is used to engage students or mark progress.",
+      "As the bell rings, the {values} remains, a symbol of guidance and routine."
+    ],
+    "values": [
+      "pointer stick",
+      "attendance sheet",
+      "desk bell"
+    ]
+  },
+  {
+    "id": "object_0019",
+    "segments": [
+      "A gamer sets a {values} on a sleek desk, neon lights reflecting off glossy surfaces.",
+      "Between matches, the {values} is picked up or adjusted, fingers moving with practiced speed.",
+      "As the night wears on, the {values} stays within reach, part of the immersive experience."
+    ],
+    "values": [
+      "controller",
+      "energy drink can",
+      "strategy guide"
+    ]
+  },
+  {
+    "id": "object_0020",
+    "segments": [
+      "A businesswoman places a {values} on a polished conference table, city skyline visible through floor-to-ceiling windows.",
+      "During heated discussions, the {values} is referenced or moved, hands gesturing with emphasis.",
+      "As the meeting concludes, the {values} is gathered up, a testament to another productive day."
+    ],
+    "values": [
+      "presentation remote",
+      "contract folder",
+      "tablet"
+    ]
+  },
+  {
+    "id": "object_0023",
+    "segments": [
+      "A scientist sets a {values} on a cluttered worktable, sunlight glinting off glass and metal.",
+      "During a breakthrough moment, the {values} is reached for, hands steady with anticipation.",
+      "As the experiment concludes, the {values} is left among notes and scattered tools."
+    ],
+    "values": [
+      "test tube rack",
+      "lab notebook",
+      "protective gloves"
+    ]
+  },
+  {
+    "id": "object_0025",
+    "segments": [
+      "A hiker lays a {values} on a mossy rock, dappled sunlight flickering through forest branches.",
+      "During a rest, the {values} is opened or checked, boots dusty from the trail.",
+      "As the journey resumes, the {values} is packed away, ready for new adventures."
+    ],
+    "values": [
+      "compass",
+      "snack bar",
+      "field journal"
+    ]
+  },
+  {
+    "id": "object_0026",
+    "segments": [
+      "A tailor sets a {values} on a fabric-strewn table, warm lamplight illuminating the workspace.",
+      "Between careful stitches, the {values} is picked up or adjusted, fingers nimble and precise.",
+      "As the garment nears completion, the {values} sits among colorful threads and patterns."
+    ],
+    "values": [
+      "measuring tape",
+      "seam ripper",
+      "chalk pencil"
+    ]
+  },
+  {
+    "id": "object_0027",
+    "segments": [
+      "A barista places a {values} on a polished counter, morning sunlight catching the steam in the air.",
+      "Between orders, the {values} is used or cleaned, hands moving in a practiced dance.",
+      "As the café quiets, the {values} remains, a symbol of hospitality and routine."
+    ],
+    "values": [
+      "milk frother",
+      "tip jar",
+      "order pad"
+    ]
+  },
+  {
+    "id": "object_0028",
+    "segments": [
+      "A mechanic sets a {values} on a metal workbench, fluorescent lights reflecting off shiny tools.",
+      "During repairs, the {values} is picked up or consulted, hands stained with grease.",
+      "As the job finishes, the {values} is set aside, ready for the next challenge."
+    ],
+    "values": [
+      "wrench",
+      "diagnostic tablet",
+      "oil rag"
+    ]
+  },
+  {
+    "id": "object_0029",
+    "segments": [
+      "A florist lays a {values} on a wooden table, petals and leaves scattered like confetti.",
+      "While arranging bouquets, the {values} is used or admired, fingers gentle and attentive.",
+      "As the shop closes, the {values} rests among fresh blooms and fragrant stems."
+    ],
+    "values": [
+      "pruning shears",
+      "ribbon spool",
+      "spray bottle"
+    ]
+  },
+  {
+    "id": "object_0030",
+    "segments": [
+      "A pilot places a {values} on the cockpit dashboard, early morning light streaming through the windshield.",
+      "During pre-flight checks, the {values} is referenced or handled, movements precise and confident.",
+      "As the engines roar to life, the {values} stays in view, part of every journey’s beginning."
+    ],
+    "values": [
+      "flight logbook",
+      "aviator sunglasses",
+      "navigation chart"
+    ]
+  },
+  {
+    "id": "object_0031",
+    "segments": [
+      "A writer sets a {values} on a vintage desk, golden afternoon light illuminating scattered manuscripts.",
+      "Between bursts of inspiration, the {values} is picked up or adjusted, fingers stained with ink or tapping thoughtfully.",
+      "As dusk falls, the {values} remains among drafts and coffee rings, a silent companion to creativity."
+    ],
+    "values": [
+      "typewriter",
+      "fountain pen",
+      "mug"
+    ]
+  },
+  {
+    "id": "object_0034",
+    "segments": [
+      "A musician sets a {values} on a dimly lit stage, colored spotlights casting dramatic shadows.",
+      "Between songs, the {values} is adjusted or tuned, hands steady and focused.",
+      "As the encore ends, the {values} remains in the glow, echoing with the night’s melodies."
+    ],
+    "values": [
+      "guitar",
+      "microphone",
+      "setlist"
+    ]
+  },
+  {
+    "id": "object_0035",
+    "segments": [
+      "A traveler places a {values} on a sun-warmed beach towel, the sound of waves and distant laughter in the air.",
+      "Between swims and daydreams, the {values} is picked up, sand clinging to fingers and pages.",
+      "As the sun sets, the {values} rests beside seashells and footprints."
+    ],
+    "values": [
+      "novel",
+      "sunscreen bottle",
+      "camera"
+    ]
+  },
+  {
+    "id": "object_0036",
+    "segments": [
+      "An engineer sets a {values} on a cluttered workbench, the hum of machines and soft glow of monitors filling the lab.",
+      "While troubleshooting, the {values} is used or referenced, hands moving with practiced efficiency.",
+      "As the prototype powers up, the {values} sits among blueprints and scattered components."
+    ],
+    "values": [
+      "multimeter",
+      "schematic diagram",
+      "soldering iron"
+    ]
+  },
+  {
+    "id": "object_0037",
+    "segments": [
+      "A painter lays a {values} on a paint-splattered stool, sunlight streaming through tall studio windows.",
+      "During creative pauses, the {values} is picked up or observed, colors and textures inspiring new ideas.",
+      "As the canvas dries, the {values} remains in the gentle afternoon light."
+    ],
+    "values": [
+      "paintbrush",
+      "color wheel",
+      "glass jar"
+    ]
+  },
+  {
+    "id": "object_0038",
+    "segments": [
+      "A nurse sets a {values} on a spotless counter, the soft hum of hospital machines in the background.",
+      "Between caring for patients, the {values} is used or checked, hands gloved and movements efficient.",
+      "As the shift changes, the {values} remains ready for the next call."
+    ],
+    "values": [
+      "thermometer",
+      "clipboard",
+      "medical mask"
+    ]
+  },
+  {
+    "id": "object_0040",
+    "segments": [
+      "A designer sets a {values} on a sleek glass desk, city lights twinkling outside the window.",
+      "In moments of inspiration, the {values} is referenced or used, hands sketching or typing rapidly.",
+      "As midnight approaches, the {values} sits among sketches and glowing screens."
+    ],
+    "values": [
+      "graphic tablet",
+      "swatch book",
+      "wireframe notebook"
+    ]
+  },
+  {
+    "id": "person_0005",
+    "segments": [
+      "A {values} stands at the edge of a sparkling lake, holding a fishing rod and watching the ripples on the water.",
+      "The {values} casts the fishing line gently, the hook landing with a soft splash among the reeds.",
+      "As the sun begins to set, the {values} patiently waits, surrounded by tall grass and the sounds of nature."
+    ],
+    "values": [
+      "young boy",
+      "adult woman",
+      "elderly man"
+    ]
+  },
+  {
+    "id": "person_0006",
+    "segments": [
+      "In a bustling city park, a {values} tosses a bright red frisbee across an open field.",
+      "The {values} laughs as a playful dog chases after the frisbee, weaving between people enjoying the sunny day.",
+      "With trees and skyscrapers in the background, the {values} calls the dog back, ready to throw again."
+    ],
+    "values": [
+      "teenage girl",
+      "middle-aged man",
+      "elderly woman"
+    ]
+  },
+  {
+    "id": "person_0016",
+    "segments": [
+      "A {values} stands beside a wooden fence, gently brushing a brown horse in a sunlit pasture.",
+      "The horse nuzzles the {values} as birds sing and wildflowers sway in the breeze.",
+      "After finishing, the {values} strokes the horse's mane, both enjoying the peaceful morning."
+    ],
+    "values": [
+      "child",
+      "teenage girl",
+      "senior man"
+    ]
+  },
+  {
+    "id": "person_0022",
+    "segments": [
+      "A {values} stands in a sunlit field, flying a bright yellow kite against a clear blue sky.",
+      "The {values} runs across the grass, laughing as the kite soars higher with the wind.",
+      "With arms raised, the {values} watches the kite dance among the clouds, surrounded by open space."
+    ],
+    "values": [
+      "child",
+      "teenage boy",
+      "senior woman"
+    ]
+  },
+  {
+    "id": "person_0025",
+    "segments": [
+      "A {values} stands at a garden table, arranging a bouquet of fresh flowers in a tall vase.",
+      "Petals and leaves are scattered on the table as the {values} selects blooms of different colors.",
+      "The finished bouquet brightens the room as sunlight pours in, and the {values} smiles at the cheerful arrangement."
+    ],
+    "values": [
+      "young girl",
+      "adult woman",
+      "elderly man"
+    ]
+  },
+  {
+    "id": "person_0028",
+    "segments": [
+      "A {values} sits at a wooden desk, writing a letter with a fountain pen as sunlight streams through the window.",
+      "The {values} pauses to think, glancing at family photos arranged neatly on the desk.",
+      "After sealing the envelope, the {values} smiles, feeling connected to loved ones far away."
+    ],
+    "values": [
+      "teenage girl",
+      "adult woman",
+      "senior man"
+    ]
+  },
+  {
+    "id": "person_0029",
+    "segments": [
+      "A {values} stands on a rocky hiking trail, gazing at the mountain scenery stretching out before them.",
+      "The {values} takes a sip from a water bottle, breathing in the crisp, fresh air.",
+      "With a backpack slung over one shoulder, the {values} continues up the trail, surrounded by wildflowers and tall pines."
+    ],
+    "values": [
+      "young boy",
+      "adult man",
+      "elderly lady"
+    ]
+  },
+  {
+    "id": "person_0033",
+    "segments": [
+      "A {values} stands at a pottery wheel in a bright studio, shaping a lump of clay with wet hands.",
+      "Sunlight streams through large windows, illuminating shelves filled with finished vases and bowls.",
+      "The {values} carefully lifts the new pot from the wheel, proud of the smooth, even shape."
+    ],
+    "values": [
+      "young boy",
+      "adult woman",
+      "elderly man"
+    ]
+  },
+  {
+    "id": "person_0037",
+    "segments": [
+      "A {values} sits on a picnic table in a sunny park, sketching the landscape in a spiral notebook.",
+      "Trees, flowers, and distant hills fill the view as the {values} adds details with a pencil.",
+      "Satisfied, the {values} closes the notebook, looking out at the scene with a contented smile."
+    ],
+    "values": [
+      "young boy",
+      "adult man",
+      "elderly woman"
+    ]
+  },
+  {
+    "id": "person_0042",
+    "segments": [
+      "A {values} stands at the edge of a soccer field, cheering loudly for their team.",
+      "The {values} waves a small flag in the air, clapping as a goal is scored.",
+      "After the match, the {values} joins the players to celebrate, smiling brightly under the setting sun."
+    ],
+    "values": [
+      "young boy",
+      "adult man",
+      "elderly woman"
+    ]
+  },
+  {
+    "id": "person_0043",
+    "segments": [
+      "A {values} sits at a piano in a softly lit room, practicing a gentle melody.",
+      "The {values} studies the sheet music carefully, their fingers gliding across the keys.",
+      "After finishing the piece, the {values} closes the piano lid, feeling accomplished and relaxed."
+    ],
+    "values": [
+      "child",
+      "teenage boy",
+      "senior lady"
+    ]
+  },
+  {
+    "id": "person_0044",
+    "segments": [
+      "A {values} stands beside a campfire under a starry sky, roasting marshmallows on a stick.",
+      "The {values} laughs with friends, enjoying the warmth of the fire and the cool night air.",
+      "After the fire dies down, the {values} gazes at the stars, feeling peaceful and content."
+    ],
+    "values": [
+      "young girl",
+      "adult woman",
+      "elderly man"
+    ]
+  },
+  {
+    "id": "person_0045",
+    "segments": [
+      "A {values} kneels by a bubbling stream, filling a small bottle with clear water.",
+      "The {values} looks around at the lush greenery, listening to the gentle sound of flowing water.",
+      "After securing the bottle, the {values} stands up and continues their hike through the forest."
+    ],
+    "values": [
+      "young boy",
+      "teenage girl",
+      "senior man"
+    ]
+  },
+  {
+    "id": "sequence_0004",
+    "segments": [
+      "The boy starts by {values[0]}.",
+      "Then, he {values[1]}.",
+      "Finally, he {values[2]}."
+    ],
+    "values": [
+      [
+        "puts on his blue jacket, zipping it up tightly",
+        "ties his shoelaces with careful fingers, making double knots",
+        "grabs his red backpack from the chair, ready to leave"
+      ],
+      [
+        "grabs his red backpack from the chair, ready to leave",
+        "puts on his blue jacket, zipping it up tightly",
+        "ties his shoelaces with careful fingers, making double knots"
+      ],
+      [
+        "ties his shoelaces with careful fingers, making double knots",
+        "grabs his red backpack from the chair, ready to leave",
+        "puts on his blue jacket, zipping it up tightly"
+      ]
+    ]
+  },
+  {
+    "id": "sequence_0007",
+    "segments": [
+      "First, the cat {values[0]}.",
+      "Then, it {values[1]}.",
+      "Finally, it {values[2]}."
+    ],
+    "values": [
+      [
+        "stretches its body on the sunny windowsill",
+        "jumps gracefully onto the tall bookshelf",
+        "curls up on a soft cushion, purring contentedly"
+      ],
+      [
+        "curls up on a soft cushion, purring contentedly",
+        "stretches its body on the sunny windowsill",
+        "jumps gracefully onto the tall bookshelf"
+      ],
+      [
+        "jumps gracefully onto the tall bookshelf",
+        "curls up on a soft cushion, purring contentedly",
+        "stretches its body on the sunny windowsill"
+      ]
+    ]
+  },
+  {
+    "id": "sequence_0008",
+    "segments": [
+      "The athlete starts by {values[0]}.",
+      "Then, she {values[1]}.",
+      "Finally, she {values[2]}."
+    ],
+    "values": [
+      [
+        "ties her hair back into a ponytail, focused and determined",
+        "does a series of warm-up stretches on the track",
+        "sprints down the lane, arms pumping powerfully"
+      ],
+      [
+        "sprints down the lane, arms pumping powerfully",
+        "ties her hair back into a ponytail, focused and determined",
+        "does a series of warm-up stretches on the track"
+      ],
+      [
+        "does a series of warm-up stretches on the track",
+        "sprints down the lane, arms pumping powerfully",
+        "ties her hair back into a ponytail, focused and determined"
+      ]
+    ]
+  },
+  {
+    "id": "sequence_0009",
+    "segments": [
+      "First, the worker {values[0]}.",
+      "Then, he {values[1]}.",
+      "At last, he {values[2]}."
+    ],
+    "values": [
+      [
+        "puts on a yellow safety helmet in the locker room",
+        "carries a heavy toolbox to the construction site",
+        "checks the blueprints carefully before starting work"
+      ],
+      [
+        "checks the blueprints carefully before starting work",
+        "puts on a yellow safety helmet in the locker room",
+        "carries a heavy toolbox to the construction site"
+      ],
+      [
+        "carries a heavy toolbox to the construction site",
+        "checks the blueprints carefully before starting work",
+        "puts on a yellow safety helmet in the locker room"
+      ]
+    ]
+  },
+  {
+    "id": "sequence_0010",
+    "segments": [
+      "The dog first {values[0]}.",
+      "Then, it {values[1]}.",
+      "Finally, it {values[2]}."
+    ],
+    "values": [
+      [
+        "sniffs around the garden, searching for interesting scents",
+        "chases a bouncing red ball across the grass",
+        "lies down under a shady tree, panting happily"
+      ],
+      [
+        "lies down under a shady tree, panting happily",
+        "sniffs around the garden, searching for interesting scents",
+        "chases a bouncing red ball across the grass"
+      ],
+      [
+        "chases a bouncing red ball across the grass",
+        "lies down under a shady tree, panting happily",
+        "sniffs around the garden, searching for interesting scents"
+      ]
+    ]
+  },
+  {
+    "id": "sequence_0018",
+    "segments": [
+      "First, the artist {values[0]}.",
+      "Next, he {values[1]}.",
+      "Finally, he {values[2]}."
+    ],
+    "values": [
+      [
+        "sets up a blank canvas on the wooden easel",
+        "mixes bright colors on his palette with a brush",
+        "paints broad strokes across the canvas, creating a landscape"
+      ],
+      [
+        "paints broad strokes across the canvas, creating a landscape",
+        "sets up a blank canvas on the wooden easel",
+        "mixes bright colors on his palette with a brush"
+      ],
+      [
+        "mixes bright colors on his palette with a brush",
+        "paints broad strokes across the canvas, creating a landscape",
+        "sets up a blank canvas on the wooden easel"
+      ]
+    ]
+  },
+  {
+    "id": "sequence_0022",
+    "segments": [
+      "First, the musician {values[0]}.",
+      "Then, she {values[1]}.",
+      "Finally, she {values[2]}."
+    ],
+    "values": [
+      [
+        "opens her violin case and takes out the instrument carefully",
+        "tunes each string by ear, listening closely",
+        "plays a gentle melody, her bow gliding smoothly"
+      ],
+      [
+        "plays a gentle melody, her bow gliding smoothly",
+        "opens her violin case and takes out the instrument carefully",
+        "tunes each string by ear, listening closely"
+      ],
+      [
+        "tunes each string by ear, listening closely",
+        "plays a gentle melody, her bow gliding smoothly",
+        "opens her violin case and takes out the instrument carefully"
+      ]
+    ]
+  },
+  {
+    "id": "sequence_0024",
+    "segments": [
+      "First, the fisherman {values[0]}.",
+      "Then, he {values[1]}.",
+      "Finally, he {values[2]}."
+    ],
+    "values": [
+      [
+        "casts his fishing line into the calm lake at sunrise",
+        "waits patiently on the wooden dock, watching the ripples",
+        "reels in a silver fish, smiling with satisfaction"
+      ],
+      [
+        "reels in a silver fish, smiling with satisfaction",
+        "casts his fishing line into the calm lake at sunrise",
+        "waits patiently on the wooden dock, watching the ripples"
+      ],
+      [
+        "waits patiently on the wooden dock, watching the ripples",
+        "reels in a silver fish, smiling with satisfaction",
+        "casts his fishing line into the calm lake at sunrise"
+      ]
+    ]
+  },
+  {
+    "id": "sequence_0026",
+    "segments": [
+      "First, the child {values[0]}.",
+      "Then, he {values[1]}.",
+      "Finally, he {values[2]}."
+    ],
+    "values": [
+      [
+        "blows up a bright yellow balloon, cheeks puffed out",
+        "ties a knot at the end, making sure it won't deflate",
+        "draws a smiley face on the balloon with a black marker"
+      ],
+      [
+        "draws a smiley face on the balloon with a black marker",
+        "blows up a bright yellow balloon, cheeks puffed out",
+        "ties a knot at the end, making sure it won't deflate"
+      ],
+      [
+        "ties a knot at the end, making sure it won't deflate",
+        "draws a smiley face on the balloon with a black marker",
+        "blows up a bright yellow balloon, cheeks puffed out"
+      ]
+    ]
+  },
+  {
+    "id": "sequence_0028",
+    "segments": [
+      "First, the little girl {values[0]}.",
+      "Then, she {values[1]}.",
+      "Finally, she {values[2]}."
+    ],
+    "values": [
+      [
+        "puts on her red rain boots, smiling excitedly",
+        "opens a colorful umbrella as raindrops begin to fall",
+        "splashes in a puddle, giggling as water flies"
+      ],
+      [
+        "splashes in a puddle, giggling as water flies",
+        "puts on her red rain boots, smiling excitedly",
+        "opens a colorful umbrella as raindrops begin to fall"
+      ],
+      [
+        "opens a colorful umbrella as raindrops begin to fall",
+        "splashes in a puddle, giggling as water flies",
+        "puts on her red rain boots, smiling excitedly"
+      ]
+    ]
+  },
+  {
+    "id": "sequence_0029",
+    "segments": [
+      "The mechanic starts by {values[0]}.",
+      "Then, he {values[1]}.",
+      "Finally, he {values[2]}."
+    ],
+    "values": [
+      [
+        "lifts the hood of the car, inspecting the engine",
+        "tightens a loose bolt with a silver wrench",
+        "wipes grease from his hands using a blue rag"
+      ],
+      [
+        "wipes grease from his hands using a blue rag",
+        "lifts the hood of the car, inspecting the engine",
+        "tightens a loose bolt with a silver wrench"
+      ],
+      [
+        "tightens a loose bolt with a silver wrench",
+        "wipes grease from his hands using a blue rag",
+        "lifts the hood of the car, inspecting the engine"
+      ]
+    ]
+  },
+  {
+    "id": "sequence_0033",
+    "segments": [
+      "The painter begins by {values[0]}.",
+      "Next, he {values[1]}.",
+      "Finally, he {values[2]}."
+    ],
+    "values": [
+      [
+        "lays out tubes of oil paint on the messy table",
+        "dips a wide brush into bright yellow paint",
+        "creates swirling patterns on a large canvas"
+      ],
+      [
+        "creates swirling patterns on a large canvas",
+        "lays out tubes of oil paint on the messy table",
+        "dips a wide brush into bright yellow paint"
+      ],
+      [
+        "dips a wide brush into bright yellow paint",
+        "creates swirling patterns on a large canvas",
+        "lays out tubes of oil paint on the messy table"
+      ]
+    ]
+  },
+  {
+    "id": "sequence_0035",
+    "segments": [
+      "The waiter starts by {values[0]}.",
+      "Then, he {values[1]}.",
+      "Finally, he {values[2]}."
+    ],
+    "values": [
+      [
+        "sets the table with clean white plates and silverware",
+        "pours water into tall glasses for the guests",
+        "serves steaming bowls of soup with a smile"
+      ],
+      [
+        "serves steaming bowls of soup with a smile",
+        "sets the table with clean white plates and silverware",
+        "pours water into tall glasses for the guests"
+      ],
+      [
+        "pours water into tall glasses for the guests",
+        "serves steaming bowls of soup with a smile",
+        "sets the table with clean white plates and silverware"
+      ]
+    ]
+  },
+  {
+    "id": "static_relation_0001",
+    "segments": [
+      "A person enters a quiet park and chooses to {values} a long wooden bench. The shot is wide, showing the whole bench and the person’s position in the open space.",
+      "They remain like this, sometimes glancing around or stretching, with the camera angle making it unmistakable that they are {values} the bench.",
+      "After a while, the person shifts or relaxes, still {values} the bench, and the scene composition highlights how their spot changes their view of the park and the bench."
+    ],
+    "values": [
+      "sit in the center of",
+      "sit at the left end of",
+      "sit on the ground beside"
+    ]
+  },
+  {
+    "id": "static_relation_0003",
+    "segments": [
+      "A person enters a dining room and decides to {values} a large rectangular table. The camera frames the entire table and the person, making their spatial relationship clear.",
+      "They stay in this position, sometimes glancing at other chairs or the tableware, and the shot makes it obvious whether they are {values} the table.",
+      "As time passes, the person continues to {values} the table, and the wide view shows whether they are at the center, at the left corner, or sitting across from another seat."
+    ],
+    "values": [
+      "sit at the center of the long side of",
+      "sit at the left corner of",
+      "sit across from another person at"
+    ]
+  },
+  {
+    "id": "static_relation_0004",
+    "segments": [
+      "A person enters a cozy living room and decides to {values} a plush sofa. The camera shows both the sofa and the person, highlighting their spatial relationship.",
+      "They remain in this position, sometimes adjusting a cushion or stretching, with the shot making it clear they are {values} the sofa.",
+      "After a while, the person continues to {values} the sofa, and the composition emphasizes whether they are sitting, kneeling in front, or sitting on the armrest."
+    ],
+    "values": [
+      "sit in the middle of",
+      "kneel on the carpet in front of",
+      "sit on the left armrest of"
+    ]
+  },
+  {
+    "id": "static_relation_0005",
+    "segments": [
+      "A person enters a library and chooses to {values} a tall bookshelf. The camera pulls back to show the full shelf and the person's position.",
+      "They remain in this posture, sometimes scanning the titles or reaching for a book, with the shot making it clear they are {values} the bookshelf.",
+      "As time passes, the person still {values} the bookshelf, and the scene composition highlights their spatial relationship."
+    ],
+    "values": [
+      "stand directly beside",
+      "sit on a step stool below",
+      "reach above for a book on top of"
+    ]
+  },
+  {
+    "id": "static_relation_0006",
+    "segments": [
+      "A person approaches a vending machine and chooses to {values} it while deciding what to buy. The camera pulls back to include both the person and the vending machine in full.",
+      "They remain in this position, sometimes checking their pockets or looking at the display, with the camera making it clear they are {values} the vending machine.",
+      "After a moment, the person still {values} the vending machine, and the shot emphasizes whether they are close, to the side, or squatting below."
+    ],
+    "values": [
+      "stand close in front of",
+      "stand to the left side of",
+      "squat below the selection panel of"
+    ]
+  },
+  {
+    "id": "static_relation_0008",
+    "segments": [
+      "A person enters a kitchen and chooses to {values} a central island counter. The camera frames the whole counter and the person.",
+      "They remain in this position, sometimes reaching for utensils or glancing around, with the shot making it clear they are {values} the counter.",
+      "After a while, the person continues to {values} the counter, and the composition makes their location obvious."
+    ],
+    "values": [
+      "stand along the near side of",
+      "lean on the far side of",
+      "sit on a stool beside"
+    ]
+  },
+  {
+    "id": "static_relation_0009",
+    "segments": [
+      "A person enters a bedroom and decides to {values} a large bed. The camera shows both the bed and the person in full.",
+      "They stay in this position, sometimes fluffing a pillow or stretching, with the shot making it clear they are {values} the bed.",
+      "As time passes, the person still {values} the bed, and the composition highlights their spatial relationship."
+    ],
+    "values": [
+      "sit cross-legged in the center of",
+      "lie along the left edge of",
+      "kneel on the floor beside"
+    ]
+  },
+  {
+    "id": "static_relation_0012",
+    "segments": [
+      "A person enters a museum and chooses to {values} a display case. The camera frames both the case and the person.",
+      "They remain in this position, sometimes peering inside or taking notes, with the shot making it clear they are {values} the case.",
+      "After a while, the person still {values} the case, and the composition highlights their spatial relationship."
+    ],
+    "values": [
+      "stand directly in front of",
+      "stand to the left side of",
+      "sit on a bench across from"
+    ]
+  },
+  {
+    "id": "static_relation_0014",
+    "segments": [
+      "A person enters a garden and chooses to {values} a stone fountain. The camera pulls back to show both the fountain and the person.",
+      "They remain in this position, sometimes dipping a hand in the water or looking at flowers, with the shot making it clear they are {values} the fountain.",
+      "After a while, the person still {values} the fountain, and the composition highlights their spatial arrangement."
+    ],
+    "values": [
+      "sit on the edge of",
+      "stand beside the right side of",
+      "kneel on the grass below"
+    ]
+  },
+  {
+    "id": "static_relation_0015",
+    "segments": [
+      "A person enters a classroom and chooses to {values} the blackboard. The camera is wide enough to show both the blackboard and the person.",
+      "They remain in this position, sometimes writing or erasing, with the shot making it clear they are {values} the blackboard.",
+      "As time passes, the person still {values} the blackboard, and the composition highlights their spatial relationship."
+    ],
+    "values": [
+      "stand directly in front of",
+      "stand to the left edge of",
+      "sit on the teacher’s desk below"
+    ]
+  },
+  {
+    "id": "static_relation_0016",
+    "segments": [
+      "A person enters a hospital room and chooses to {values} a patient’s bed. The camera frames the bed and the person.",
+      "They remain in this position, sometimes checking a chart or talking to the patient, with the shot making it clear they are {values} the bed.",
+      "After a while, the person still {values} the bed, and the scene highlights their spatial arrangement."
+    ],
+    "values": [
+      "sit at the bedside",
+      "stand at the foot of",
+      "lean over the bedrail of"
+    ]
+  },
+  {
+    "id": "static_relation_0017",
+    "segments": [
+      "A person enters a train station and chooses to {values} a platform bench. The camera is wide enough to show both the bench and the person.",
+      "They remain in this position, sometimes checking their phone or looking at the tracks, with the shot making it clear they are {values} the bench.",
+      "As time passes, the person still {values} the bench, and the composition highlights their spatial arrangement."
+    ],
+    "values": [
+      "sit at the left end of",
+      "sit at the right end of",
+      "stand beside the center of"
+    ]
+  },
+  {
+    "id": "static_relation_0019",
+    "segments": [
+      "A person enters a playground and chooses to {values} a swing set. The camera is wide enough to show both the swing set and the person.",
+      "They remain in this position, sometimes pushing the swing or watching children, with the shot making it clear they are {values} the swing set.",
+      "As time passes, the person still {values} the swing set, and the composition highlights their spatial arrangement."
+    ],
+    "values": [
+      "sit on the leftmost swing of",
+      "sit on the rightmost swing of",
+      "stand beside the frame of"
+    ]
+  },
+  {
+    "id": "static_relation_0021",
+    "segments": [
+      "A person enters a bookstore and chooses to {values} a display table. The camera frames both the table and the person.",
+      "They remain in this position, sometimes browsing books or flipping pages, with the shot making it clear they are {values} the table.",
+      "After a while, the person still {values} the table, and the scene highlights their spatial relationship."
+    ],
+    "values": [
+      "stand at the near side of",
+      "stand at the far side of",
+      "sit on a chair beside"
+    ]
+  },
+  {
+    "id": "static_relation_0024",
+    "segments": [
+      "A person enters a hotel lobby and chooses to {values} a reception desk. The camera frames both the desk and the person.",
+      "They remain in this position, sometimes checking in or talking to staff, with the shot making it clear they are {values} the desk.",
+      "After a while, the person still {values} the desk, and the composition highlights their spatial relationship."
+    ],
+    "values": [
+      "stand at the left end of",
+      "stand at the right end of",
+      "lean on the counter at the center of"
+    ]
+  },
+  {
+    "id": "static_relation_0026",
+    "segments": [
+      "A person enters a gallery and chooses to {values} a large painting. The camera frames the painting and the person.",
+      "They remain in this position, sometimes studying the artwork or taking notes, with the shot making it clear they are {values} the painting.",
+      "After a while, the person still {values} the painting, and the composition highlights their spatial arrangement."
+    ],
+    "values": [
+      "stand directly in front of",
+      "stand to the left side of",
+      "sit on a bench across from"
+    ]
+  },
+  {
+    "id": "static_relation_0028",
+    "segments": [
+      "A person enters a stadium and chooses to {values} the center field. The camera is wide enough to show both the field and the person.",
+      "They remain in this position, sometimes stretching or looking at the stands, with the shot making it clear they are {values} the field.",
+      "As time passes, the person still {values} the field, and the composition highlights their spatial relationship."
+    ],
+    "values": [
+      "stand along the sideline of",
+      "sit on the grass near the corner of",
+      "walk along the running track around"
+    ]
+  },
+  {
+    "id": "static_relation_0029",
+    "segments": [
+      "A person enters a shopping mall and chooses to {values} an escalator. The camera frames both the escalator and the person.",
+      "They remain in this position, sometimes checking their phone or watching people, with the shot making it clear they are {values} the escalator.",
+      "After a while, the person still {values} the escalator, and the composition highlights their spatial relationship."
+    ],
+    "values": [
+      "stand at the base of",
+      "stand at the top of",
+      "lean against the side railing of"
+    ]
+  },
+  {
+    "id": "static_relation_0032",
+    "segments": [
+      "A person enters a bakery and chooses to {values} a display counter. The camera frames both the counter and the person.",
+      "They remain in this position, sometimes pointing at pastries or talking to staff, with the shot making it clear they are {values} the counter.",
+      "After a while, the person still {values} the counter, and the composition highlights their spatial relationship."
+    ],
+    "values": [
+      "stand at the near side of",
+      "stand at the far side of",
+      "lean on the left edge of"
+    ]
+  },
+  {
+    "id": "static_relation_0034",
+    "segments": [
+      "A person enters a gymnasium and chooses to {values} a basketball hoop. The camera is wide enough to show both the hoop and the person.",
+      "They remain in this position, sometimes bouncing a ball or stretching, with the shot making it clear they are {values} the hoop.",
+      "As time passes, the person still {values} the hoop, and the composition highlights their spatial arrangement."
+    ],
+    "values": [
+      "stand under",
+      "stand to the right side of",
+      "sit on the floor below"
+    ]
+  },
+  {
+    "id": "static_relation_0037",
+    "segments": [
+      "A person enters a lecture hall and chooses to {values} the podium. The camera frames both the podium and the person.",
+      "They remain in this position, sometimes referencing notes or speaking, with the shot making it clear they are {values} the podium.",
+      "After a while, the person still {values} the podium, and the composition highlights their spatial relationship."
+    ],
+    "values": [
+      "stand to the left of",
+      "stand to the right of",
+      "lean across the top of"
+    ]
+  },
+  {
+    "id": "static_relation_0038",
+    "segments": [
+      "A person enters a photo studio and chooses to {values} a backdrop. The camera frames both the backdrop and the person.",
+      "They remain in this position, sometimes posing or adjusting lights, with the shot making it clear they are {values} the backdrop.",
+      "After a while, the person still {values} the backdrop, and the composition highlights their spatial relationship."
+    ],
+    "values": [
+      "stand in front of",
+      "stand to the left side of",
+      "sit on a stool below"
+    ]
+  },
+  {
+    "id": "static_relation_0039",
+    "segments": [
+      "A person enters a zoo and chooses to {values} the lion enclosure. The camera is wide enough to show both the enclosure and the person.",
+      "They remain in this position, sometimes taking photos or watching the animals, with the shot making it clear they are {values} the enclosure.",
+      "As time passes, the person still {values} the enclosure, and the composition highlights their spatial arrangement."
+    ],
+    "values": [
+      "stand at the left edge of",
+      "stand at the right edge of",
+      "sit on the grass beside"
+    ]
+  },
+  {
+    "id": "static_relation_0040",
+    "segments": [
+      "A person enters a sports store and chooses to {values} a display rack of shoes. The camera frames both the rack and the person.",
+      "They remain in this position, sometimes picking up shoes or comparing sizes, with the shot making it clear they are {values} the rack.",
+      "After a while, the person still {values} the rack, and the composition highlights their spatial relationship."
+    ],
+    "values": [
+      "stand in front of",
+      "stand to the left of",
+      "sit on a low bench beside"
+    ]
+  }
+]
