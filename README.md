@@ -1,7 +1,7 @@
 # NO PLACE TO HIDE: Benchmarking Video Hallucination with Background-Controlled Pairs
 
 <p align="center">
-  <img src="assets/flowchart.jpg" alt="VidPair-Halluc teaser figure" width="800">
+  <img src="assets/flowchart.png" alt="VidPair-Halluc teaser figure" width="800">
 </p>
 
 ## Abstract
