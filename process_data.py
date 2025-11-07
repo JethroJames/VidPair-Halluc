@@ -38,7 +38,7 @@ def find_json_file(category):
 
 def main():
     # 设置工作目录
-    work_dir = "/hpc2hdd/home/hhuang118/VidHalluc"
+    work_dir = "Your Path Here"
     os.chdir(work_dir)
     
     print("开始数据处理任务...")

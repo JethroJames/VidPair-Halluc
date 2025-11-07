@@ -1,8 +1,8 @@
 import cv2
 import os
 
-folder_path = "/data/harold/negative_tool/test_video"
-output_path = "/data/harold/negative_tool/reversed_video"
+folder_path = "Your Path Here"
+output_path = "Your Path Here"
 
 for filename in os.listdir(folder_path):
     if filename.endswith(".mp4"):

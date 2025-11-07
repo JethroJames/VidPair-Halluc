@@ -2,9 +2,9 @@ import os
 import json
 
 # 定义路径
-video_path = "/data/harold/negative_tool/replaced_video"
-json_path = "/data/harold/negative_tool/source_json"
-output_json_path = "/data/harold/negative_tool/replaced_json"
+video_path = "Your Path Here"
+json_path = "Your Path Here"
+output_json_path = "Your Path Here"
 
 
 # 确保输出目录存在

@@ -3,8 +3,8 @@ from moviepy.editor import VideoFileClip, concatenate_videoclips
 from moviepy.video.fx.all import colorx
 
 # 定义路径
-input_path = "/data/harold/negative_tool/replaced_video"
-output_path = "/data/harold/negative_tool/masked_video"
+input_path = "Your Path Here"
+output_path = "Your Path Here"
 
 # 确保输出目录存在
 os.makedirs(output_path, exist_ok=True)

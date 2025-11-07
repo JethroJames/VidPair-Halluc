@@ -177,7 +177,7 @@ def generate_segment_data(story_data, processed_dir):
 
 def main():
     # 设置工作目录
-    work_dir = "/hpc2hdd/home/hhuang118/VidHalluc"
+    work_dir = "Your Path Here"
     os.chdir(work_dir)
     
     print("开始生成seg.json...")

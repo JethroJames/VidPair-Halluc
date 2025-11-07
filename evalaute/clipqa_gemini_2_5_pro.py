@@ -13,17 +13,17 @@ from threading import Lock
 
 # ========== 配置 ==========
 
-INPUT_DIR = "/hpc2hdd/home/hhuang118/VidHalluc/qa/ClipQA"
-VIDEO_FOLDER = "/hpc2hdd/home/hhuang118/VidHalluc/VidPair-Halluc"
-OUTPUT_DIR = "/hpc2hdd/home/hhuang118/VidHalluc/qa/ClipQA/results"
+INPUT_DIR = "Your Path Here"
+VIDEO_FOLDER = "Your Path Here"
+OUTPUT_DIR = "Your Path Here"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 num_frames = 16
 
 # 初始化OpenAI客户端
 client = OpenAI(
-    api_key="sk-02T1Augp34uXctQdOSEobu1tYul1nXsL3Oh34g9Hxn5h6Rbx",
-    base_url="https://api.gptplus5.com/v1"
+    api_key="Your API-KEY Here",
+    base_url="Your URL Here"
 )
 
 # ========== System Prompts ==========

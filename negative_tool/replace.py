@@ -2,10 +2,10 @@ import os
 from moviepy.editor import VideoFileClip, concatenate_videoclips
 
 # 定义路径
-base_path = "/data/harold/negative_tool"
+base_path = "Your Path Here"
 value_paths = ["value_0_test", "value_1_test", "value_2_test"]
 
-output_path = "/data/harold/negative_tool/replaced_video"
+output_path = "Your Path Here"
 
 # 获取所有文件名
 files_0 = os.listdir(os.path.join(base_path, value_paths[0]))
