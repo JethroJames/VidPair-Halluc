@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Local data and generated artifacts
+raw_data/
+processed_data/
+cache_dir/
+downloaded_models/
+logs/
+progress/
+outputs/
+results/
+
+# Large media/model artifacts should be hosted outside the code repo.
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.safetensors
+*.ckpt
+*.pt
+*.pth
