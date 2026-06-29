@@ -1,8 +1,21 @@
 #!/usr/bin/env python3
+import argparse
 import os
 import json
 import glob
 from pathlib import Path
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Build segment-level image-to-video prompts from story.json and processed images."
+    )
+    parser.add_argument("--work-dir", default=".", help="Working directory for relative paths.")
+    parser.add_argument("--story-json", default="story.json", help="Input story JSON path.")
+    parser.add_argument("--processed-dir", default="processed_data", help="Directory containing processed per-id images.")
+    parser.add_argument("--output", default="seg.json", help="Output segment JSON path.")
+    parser.add_argument("--video-dir", default="videos", help="Relative video output directory stored in seg.json.")
+    return parser.parse_args()
 
 def find_image_files(processed_dir, id_name):
     """
@@ -98,7 +111,7 @@ def get_image_path_for_segment(processed_dir, id_name, value_key, value_string, 
     
     return None
 
-def generate_segment_data(story_data, processed_dir):
+def generate_segment_data(story_data, processed_dir, video_dir="videos"):
     """
     为每个ID生成视频片段数据
     """
@@ -136,7 +149,7 @@ def generate_segment_data(story_data, processed_dir):
                             "segment_index": seg_idx,
                             "text": filled_text,
                             "image_path": image_path,
-                            "video_output_path": f"videos/{id_name}_segment_{seg_idx + 1}_values_0.mp4"
+                            "video_output_path": f"{video_dir}/{id_name}_segment_{seg_idx + 1}_values_0.mp4"
                         }
                         seg_data.append(segment_data)
                         print(f"    生成segment {seg_idx}: {value_string}")
@@ -163,7 +176,7 @@ def generate_segment_data(story_data, processed_dir):
                             "segment_index": seg_idx,
                             "text": filled_text,
                             "image_path": image_path,
-                            "video_output_path": f"videos/{id_name}_segment_{seg_idx + 1}_values_{value_idx}.mp4"
+                            "video_output_path": f"{video_dir}/{id_name}_segment_{seg_idx + 1}_values_{value_idx}.mp4"
                         }
                         seg_data.append(segment_data)
                         print(f"    生成 {value_key} segment {seg_idx}: {str(value)[:30]}...")
@@ -176,29 +189,28 @@ def generate_segment_data(story_data, processed_dir):
     return seg_data
 
 def main():
-    # 设置工作目录
-    work_dir = "Your Path Here"
-    os.chdir(work_dir)
+    args = parse_args()
+    os.chdir(args.work_dir)
     
     print("开始生成seg.json...")
     
     # 读取story.json
-    with open("story.json", "r", encoding="utf-8") as f:
+    with open(args.story_json, "r", encoding="utf-8") as f:
         story_data = json.load(f)
     
     print(f"读取了 {len(story_data)} 个story条目")
     
     # 生成segment数据
-    processed_dir = "processed_data"
-    seg_data = generate_segment_data(story_data, processed_dir)
+    processed_dir = args.processed_dir
+    seg_data = generate_segment_data(story_data, processed_dir, args.video_dir)
     
     # 保存seg.json
-    with open("seg.json", "w", encoding="utf-8") as f:
+    with open(args.output, "w", encoding="utf-8") as f:
         json.dump(seg_data, f, ensure_ascii=False, indent=2)
     
     print(f"\n生成完成！")
     print(f"总共生成了 {len(seg_data)} 个视频片段数据")
-    print(f"数据已保存到 seg.json")
+    print(f"数据已保存到 {args.output}")
     
     # 显示统计信息
     print("\n统计信息:")

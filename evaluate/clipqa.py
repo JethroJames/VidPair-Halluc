@@ -9,8 +9,19 @@ import json
 import os
 import csv
 import logging
+import argparse
 from datetime import datetime
 from collections import defaultdict
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="Evaluate ClipQA binary prediction JSON files.")
+    parser.add_argument(
+        "--base-path",
+        default=".",
+        help="Directory containing *_M_binary_qa.json and *_R_binary_qa.json prediction files.",
+    )
+    return parser.parse_args()
 
 def extract_yes_no(ans):
     """提取yes/no答案"""
@@ -412,7 +423,8 @@ def setup_logging(log_file, logger_name):
     return logger
 
 def main():
-    base_path = 'Your Path Here'
+    args = parse_args()
+    base_path = args.base_path
     
     # 创建输出文件夹
     m_output_dir = os.path.join(base_path, 'M_binary_qa')

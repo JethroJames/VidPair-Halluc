@@ -2,8 +2,19 @@ import json
 import os
 import csv
 import logging
+import argparse
 from datetime import datetime
 from itertools import combinations
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="Evaluate VideoQA binary prediction JSON files.")
+    parser.add_argument(
+        "--base-path",
+        default=".",
+        help="Directory containing *_binary_qa.json and *_T_binary_qa.json prediction files.",
+    )
+    return parser.parse_args()
 
 def extract_yes_no(ans):
     """提取yes/no答案"""
@@ -613,7 +624,8 @@ def setup_logging(log_file):
     return logger
 
 def main():
-    base_path = 'Your Path Here'
+    args = parse_args()
+    base_path = args.base_path
     
     # 创建输出文件夹
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -852,4 +864,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

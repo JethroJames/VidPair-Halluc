@@ -13,17 +13,17 @@ from threading import Lock
 
 # ========== 配置 ==========
 
-INPUT_DIR = "Your Path Here"
-VIDEO_FOLDER = "Your Path Here"
-OUTPUT_DIR = "Your Path Here"
+INPUT_DIR = os.environ.get("VIDPAIR_INPUT_DIR", ".")
+VIDEO_FOLDER = os.environ.get("VIDPAIR_VIDEO_FOLDER", "VidPair-Halluc")
+OUTPUT_DIR = os.environ.get("VIDPAIR_OUTPUT_DIR", "outputs/clipqa_gemini_2_5_pro")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 num_frames = 16
 
 # 初始化OpenAI客户端
 client = OpenAI(
-    api_key="Your API-KEY Here",
-    base_url="Your URL Here"
+    api_key=os.environ.get("GEMINI_API_KEY") or os.environ.get("OPENAI_API_KEY", "missing-api-key"),
+    base_url=os.environ.get("GEMINI_BASE_URL") or os.environ.get("OPENAI_BASE_URL") or None,
 )
 
 # ========== System Prompts ==========

@@ -1,0 +1,6 @@
+decord
+moviepy
+numpy
+openai
+opencv-python
+pillow

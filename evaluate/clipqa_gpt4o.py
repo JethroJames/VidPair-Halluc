@@ -11,17 +11,17 @@ import io
 
 # ========== 配置 ==========
 
-INPUT_DIR = "Your Path Here"
-VIDEO_FOLDER = "Your Path Here"
-OUTPUT_DIR = "Your Path Here"
+INPUT_DIR = os.environ.get("VIDPAIR_INPUT_DIR", ".")
+VIDEO_FOLDER = os.environ.get("VIDPAIR_VIDEO_FOLDER", "VidPair-Halluc")
+OUTPUT_DIR = os.environ.get("VIDPAIR_OUTPUT_DIR", "outputs/clipqa_gpt4o")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 num_frames = 16
 
 # 初始化OpenAI客户端
 client = OpenAI(
-    api_key="Your API-KEY Here",
-    base_url="Your URL Here"
+    api_key=os.environ.get("OPENAI_API_KEY", "missing-api-key"),
+    base_url=os.environ.get("OPENAI_BASE_URL") or None,
 )
 
 # ========== System Prompts ==========
