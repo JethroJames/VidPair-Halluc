@@ -126,11 +126,10 @@ The `evaluate/` directory contains model-calling examples for clip-level and vid
 ## Citation
 
 ```bibtex
-@inproceedings{vidpairhalluc2026,
-  title = {No Place to Hide: Benchmarking Video Hallucination with Background-Controlled Pairs},
-  author = {Huang, Haojian and Chen, Harold Haodong and Luo, Meng and Du, Junjia and Xu, Shanqing and Chen, Ziheng and Huang, Yanxiang and Li, Yinchuan and Chen, Yingcong},
-  booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
-  year = {2026},
-  url = {https://github.com/JethroJames/VidPair-Halluc}
+@article{huang2026no,
+  title={No Place to Hide: Benchmarking Video Hallucination with Background-Controlled Pairs},
+  author={Huang, Haojian and Chen, Harold Haodong and Luo, Meng and Du, Junjia and Xu, Shanqing and Chen, Ziheng and Huang, Yanxiang and Li, Yinchuan and Chen, Ying-Cong},
+  journal={arXiv preprint arXiv:2606.31933},
+  year={2026}
 }
 ```
