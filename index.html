@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VidPair-Halluc</title>
+    <meta name="description" content="VidPair-Halluc: a background-controlled benchmark for evaluating video hallucination.">
+    <link rel="stylesheet" href="styles.css?v=20260630-paper-links">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="VidPair-Halluc home">VidPair-Halluc</a>
+      <nav aria-label="Primary navigation">
+        <a href="#abstract">Abstract</a>
+        <a href="#motivation">Motivation</a>
+        <a href="#method">Method</a>
+        <a href="#results">Results</a>
+        <a href="#cases">Cases</a>
+        <a href="#citation">Citation</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="paper-hero constellation" aria-labelledby="title">
+        <video class="hero-bg-video" autoplay muted loop playsinline preload="auto" poster="assets/posters/clean_bottle_green.jpg" aria-hidden="true">
+          <source src="assets/videos/clean_bottle_green.mp4" type="video/mp4">
+        </video>
+        <div class="hero-bg-shade" aria-hidden="true"></div>
+        <div class="hero-shell">
+          <div class="hero-card">
+            <p class="venue">ECCV 2026</p>
+            <h1 id="title"><span class="text-gradient">VidPair-Halluc</span></h1>
+            <p class="paper-title">No Place to Hide: Benchmarking Video Hallucination with Background-Controlled Pairs</p>
+            <p class="subtitle">
+              A paired-video benchmark for probing how video-language models use visible evidence under controlled scene context.
+            </p>
+          </div>
+
+          <div class="author-card">
+            <p class="author-line">
+              <span>Haojian Huang<sup>1,2</sup></span>
+              <span>Harold Haodong Chen<sup>1,2</sup></span>
+              <span>Meng Luo<sup>3</sup></span>
+              <span>Junjia Du<sup>4</sup></span>
+              <span>Shanqing Xu<sup>5</sup></span>
+              <span>Ziheng Chen<sup>6</sup></span>
+              <span>Yanxiang Huang<sup>7</sup></span>
+              <span>Yinchuan Li<sup>2</sup></span>
+              <span>Yingcong Chen<sup>1,2,*</sup></span>
+            </p>
+            <p class="affiliation-line">
+              <span><sup>1</sup>HKUST(GZ)</span>
+              <span><sup>2</sup>Knowin AI</span>
+              <span><sup>3</sup>NUS</span>
+              <span><sup>4</sup>NTU</span>
+              <span><sup>5</sup>HUST</span>
+              <span><sup>6</sup>UIUC</span>
+              <span><sup>7</sup>PolyU</span>
+              <span><sup>*</sup>Corresponding author</span>
+            </p>
+          </div>
+
+          <div class="paper-links" aria-label="Project links">
+            <a class="button primary" href="https://huggingface.co/datasets/Jethro37/VidPair-Halluc">Dataset</a>
+            <a class="button" href="https://github.com/JethroJames/VidPair-Halluc">Code</a>
+            <a class="button" href="https://arxiv.org/abs/2606.31933">arXiv</a>
+            <a class="button" href="main_arxiv.pdf">Paper</a>
+          </div>
+
+          <div class="paired-teaser hero-teaser" aria-label="Background-controlled paired video teaser">
+            <figure>
+              <video autoplay muted loop playsinline preload="metadata" poster="assets/posters/clean_clock_black.jpg">
+                <source src="assets/videos/clean_clock_black.mp4" type="video/mp4">
+              </video>
+              <figcaption>Video A: black alarm clock</figcaption>
+            </figure>
+            <figure>
+              <video autoplay muted loop playsinline preload="metadata" poster="assets/posters/clean_clock_red.jpg">
+                <source src="assets/videos/clean_clock_red.mp4" type="video/mp4">
+              </video>
+              <figcaption>Video B: red alarm clock</figcaption>
+            </figure>
+          </div>
+          <div class="teaser-caption">
+            <p>
+              <strong>Cover pair story.</strong>
+              In both clips, the scene is built around a comparable bedroom wake-up routine with the same person, neutral wall, bedside setting, and alarm-clock interaction. Video A shows a <b>black alarm clock</b> near the bed, while Video B keeps the alarm-clock scenario but shows a <b>red alarm clock</b> held in front of the person. This pair illustrates color grounding under a controlled background: the answer depends on the visible clock color rather than the surrounding bedroom context.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="abstract" class="band summary">
+        <div class="section-head compact">
+          <p class="eyebrow">Abstract</p>
+          <h2>Same context, different truth conditions.</h2>
+          <p>
+            VidPair-Halluc follows the PairFlow construction described in the paper: 15-second videos are organized into paired contrasts where the surrounding context is intended to stay comparable while the answer-relevant visual evidence differs. The benchmark spans object, action, color, number, person, location, static relation, dynamic relation, dynamic attribute, and temporal sequence reasoning.
+          </p>
+        </div>
+        <div class="stats" aria-label="Dataset statistics">
+          <div><strong>2,000</strong><span>videos</span></div>
+          <div><strong>1,000</strong><span>paired contrasts</span></div>
+          <div><strong>11,523</strong><span>QA rows</span></div>
+          <div><strong>10</strong><span>semantic aspects</span></div>
+        </div>
+      </section>
+
+      <section id="motivation" class="band motivation">
+        <div class="section-head">
+          <p class="eyebrow">Motivation</p>
+          <h2>Evidence and scene priors in controlled pairs.</h2>
+          <p>
+            The paper studies cases where model answers may follow likely scene priors instead of the visible content. VidPair-Halluc evaluates this behavior by asking comparable questions over paired videos whose answers depend on controlled visual differences.
+          </p>
+        </div>
+        <div class="motivation-layout">
+          <figure class="paper-figure">
+            <img src="assets/paper_figures/motivation_fig1.svg" alt="Paper motivation figure contrasting textual and visual hallucination with paired video examples.">
+            <figcaption>Paper Fig. 1: from text-only perturbations to background-controlled visual contrasts.</figcaption>
+          </figure>
+          <div class="narrative-list" aria-label="Motivation points">
+            <article class="narrative-item">
+              <h3>Scene priors can affect answers.</h3>
+              <p>When the surrounding scene is familiar, a model may rely on likely events. Paired clips test whether the answer changes with the visible evidence.</p>
+            </article>
+            <article class="narrative-item">
+              <h3>Background control matters.</h3>
+              <p>If the whole video changes, unrelated cues can affect the answer. The paired setup aims to keep context stable while changing the foreground truth condition.</p>
+            </article>
+            <article class="narrative-item">
+              <h3>QA formats cover different answer styles.</h3>
+              <p>The benchmark includes binary, multiple-choice, and open-ended QA, allowing the same type of visual contrast to be evaluated under different response formats.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="method" class="band method">
+        <div class="section-head">
+          <p class="eyebrow">PairFlow</p>
+          <h2>Background-Controlled Pair Generation.</h2>
+          <p>
+            PairFlow composes a scene story, generates matched clip segments, and assembles paired videos. The construction is designed to keep the surrounding situation plausible while changing the visual evidence needed to answer.
+          </p>
+        </div>
+        <div class="paper-figure-stack">
+          <figure class="paper-figure">
+            <img src="assets/paper_figures/pairflow_fig3.svg" alt="PairFlow pipeline figure from the paper.">
+            <figcaption>Paper Fig. 3: semantic aspect selection, story composition, clip generation, and paired video assembly.</figcaption>
+          </figure>
+          <figure class="paper-figure">
+            <img src="assets/paper_figures/examples_fig4.svg" alt="Dataset examples from VidPair-Halluc showing paired videos and question types.">
+            <figcaption>Paper Fig. 4: examples across binary, multiple-choice, and open-ended QA.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="construction" class="band construction">
+        <div class="section-head compact">
+          <p class="eyebrow">Pair construction</p>
+          <h2>Controlled scenes with changed evidence.</h2>
+          <p>
+            Each pair keeps a familiar visual context and changes the foreground evidence, spatial relation, or temporal order that determines the expected answer.
+          </p>
+        </div>
+        <div class="pair-showcase-grid" aria-label="Example construction video pairs">
+          <article class="pair-panel">
+            <div class="video-pair">
+              <figure>
+                <video autoplay muted loop playsinline controls preload="metadata" poster="assets/posters/clean_grill_grill.jpg">
+                  <source src="assets/videos/clean_grill_grill.mp4" type="video/mp4">
+                </video>
+                <figcaption>Video A: grilling sausages</figcaption>
+              </figure>
+              <figure>
+                <video autoplay muted loop playsinline controls preload="metadata" poster="assets/posters/clean_grill_turn.jpg">
+                  <source src="assets/videos/clean_grill_turn.mp4" type="video/mp4">
+                </video>
+                <figcaption>Video B: turning sausages</figcaption>
+              </figure>
+            </div>
+            <h3>Action contrast</h3>
+            <p>The same backyard grill context supports different answers only because the visible hand action changes.</p>
+          </article>
+
+          <article class="pair-panel">
+            <div class="video-pair">
+              <figure>
+                <video autoplay muted loop playsinline controls preload="metadata" poster="assets/posters/clean_books_read.jpg">
+                  <source src="assets/videos/clean_books_read.mp4" type="video/mp4">
+                </video>
+                <figcaption>Video A: reading a book</figcaption>
+              </figure>
+              <figure>
+                <video autoplay muted loop playsinline controls preload="metadata" poster="assets/posters/clean_books_shelve.jpg">
+                  <source src="assets/videos/clean_books_shelve.mp4" type="video/mp4">
+                </video>
+                <figcaption>Video B: shelving a book</figcaption>
+              </figure>
+            </div>
+            <h3>Library contrast</h3>
+            <p>The bookshelf, subject, and framing stay aligned while the evidence changes from reading to returning the book.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="results" class="band results">
+        <div class="section-head">
+          <p class="eyebrow">Paper results</p>
+          <h2>Results across current VLMs.</h2>
+          <p>
+            The paper reports dataset-level background-control measurements, QA coverage across response formats, and model results under paired video evaluation.
+          </p>
+        </div>
+
+        <div class="paper-figure-stack results-figures">
+          <figure class="paper-figure">
+            <img src="assets/paper_figures/results_fig6.svg" alt="Performance comparison between text-pair and video-pair hallucinations.">
+            <figcaption>Paper Fig. 6: reported model performance on text-pair and video-pair variants.</figcaption>
+          </figure>
+          <figure class="paper-figure">
+            <img src="assets/paper_figures/results_fig7.svg" alt="t-SNE, human verification, and model radar plots from the paper.">
+            <figcaption>Paper Fig. 7: t-SNE visualization, human verification, and model-level comparison from the paper.</figcaption>
+          </figure>
+        </div>
+
+        <div class="result-grid">
+          <article class="result-card">
+            <p class="kicker">Table 1</p>
+            <h3>Full QA coverage</h3>
+            <p>Binary, multiple-choice, and open-ended QA follow the paired-video structure with visual similarity control and paired contrasts.</p>
+            <dl class="mini-stats">
+              <div><dt>QA / videos</dt><dd>11,523 / 2,000</dd></div>
+              <div><dt>Video pairs</dt><dd>1,000</dd></div>
+            </dl>
+          </article>
+
+          <article class="result-card">
+            <p class="kicker">Table 2</p>
+            <h3>Background consistency</h3>
+            <table class="metric-table">
+              <thead>
+                <tr><th>Metric</th><th>Random</th><th>Controlled</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>DINOv2 ↑</td><td>0.21</td><td>0.94 / 0.81</td></tr>
+                <tr><td>LPIPS ↓</td><td>0.68</td><td>0.15 / 0.15</td></tr>
+                <tr><td>SSIM ↑</td><td>0.24</td><td>0.76 / 0.90</td></tr>
+              </tbody>
+            </table>
+          </article>
+
+          <article class="result-card">
+            <p class="kicker">Table 3</p>
+            <h3>Reported human/model comparison</h3>
+            <div class="bar-list" aria-label="Binary wAcc comparison">
+              <div><span>Human</span><b style="width: 100%">74.32</b></div>
+              <div><span>Gemini-2.5-Pro</span><b style="width: 66%">49.15</b></div>
+              <div><span>Qwen2.5-VL</span><b style="width: 56%">41.66</b></div>
+              <div><span>GPT-4o</span><b style="width: 36%">26.97</b></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="model-table-wrap">
+          <table class="model-table">
+            <thead>
+              <tr>
+                <th>Method</th>
+                <th>Binary wAcc ↑</th>
+                <th>MCQ F1 ↑</th>
+                <th>Video Acc ↑</th>
+                <th>Open Desc. ↑</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Human</td><td>74.32</td><td>89.21</td><td>79.66</td><td>-</td></tr>
+              <tr><td>Gemini-2.5-Pro</td><td>49.15</td><td>67.32</td><td>43.36</td><td>54.68</td></tr>
+              <tr><td>GPT-5-mini</td><td>29.33</td><td>64.82</td><td>45.28</td><td>49.33</td></tr>
+              <tr><td>Qwen2.5-VL-Instruct</td><td>41.66</td><td>61.50</td><td>42.86</td><td>45.07</td></tr>
+              <tr><td>Video-LLaMA2</td><td>21.48</td><td>62.91</td><td>42.86</td><td>40.85</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="cases" class="band highlights">
+        <div class="section-head">
+          <p class="eyebrow">Taxonomy showcase</p>
+          <h2>Representative Reasoning-Axis Pairs.</h2>
+          <p>
+            These examples were selected from the clean preview pool after frame-level inspection. The page prioritizes visually legible pairs across different reasoning axes, while avoiding repeated examples of the same contrast type.
+          </p>
+        </div>
+
+        <div class="highlight-grid">
+          <article class="video-card">
+            <p class="taxonomy-tag">Object</p>
+            <div class="video-pair">
+              <video autoplay muted loop playsinline controls preload="metadata" poster="assets/posters/hero_object_calculator.jpg"><source src="assets/videos/hero_object_calculator.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline controls preload="metadata" poster="assets/posters/hero_object_stressball.jpg"><source src="assets/videos/hero_object_stressball.mp4" type="video/mp4"></video>
+            </div>
+            <h3>Calculator vs. stress ball</h3>
+            <p>Both clips keep the same desk work setup with a seated person, laptop, notebook, and window light. Video A places a calculator on the table, while Video B keeps the scene structure but replaces that object with a red stress ball.</p>
+          </article>
+
+          <article class="video-card">
+            <p class="taxonomy-tag">Action</p>
+            <div class="video-pair">
+              <video autoplay muted loop playsinline controls preload="metadata" poster="assets/posters/clean_grill_grill.jpg"><source src="assets/videos/clean_grill_grill.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline controls preload="metadata" poster="assets/posters/clean_grill_turn.jpg"><source src="assets/videos/clean_grill_turn.mp4" type="video/mp4"></video>
+            </div>
+            <h3>Grilling vs. turning sausages</h3>
+            <p>The backyard grill, open lid, food placement, and cook remain consistent across the pair. Video A emphasizes grilling sausages on the grate, while Video B changes the queried action to turning the sausages with a utensil.</p>
+          </article>
+
+          <article class="video-card">
+            <p class="taxonomy-tag">Color</p>
+            <div class="video-pair">
+              <video autoplay muted loop playsinline controls preload="metadata" poster="assets/posters/clean_bottle_pink.jpg"><source src="assets/videos/clean_bottle_pink.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline controls preload="metadata" poster="assets/posters/clean_bottle_green.jpg"><source src="assets/videos/clean_bottle_green.mp4" type="video/mp4"></video>
+            </div>
+            <h3>Pink vs. green bottle</h3>
+            <p>Both clips use the same soccer-practice background with a child drinking near the field. The highlighted visual difference is the bottle color: pink in Video A and green in Video B.</p>
+          </article>
+
+          <article class="video-card">
+            <p class="taxonomy-tag">Number</p>
+            <div class="video-pair">
+              <video autoplay muted loop playsinline controls preload="metadata" poster="assets/posters/number_onion_one.jpg"><source src="assets/videos/number_onion_one.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline controls preload="metadata" poster="assets/posters/number_onion_two.jpg"><source src="assets/videos/number_onion_two.mp4" type="video/mp4"></video>
+            </div>
+            <h3>One vs. two onions</h3>
+            <p>The kitchen counter, bowl, knife, and food-prep action stay matched. Video A shows a single onion being handled, while Video B changes the visual count to two onions in the same preparation scenario.</p>
+          </article>
+
+          <article class="video-card">
+            <p class="taxonomy-tag">Location</p>
+            <div class="video-pair">
+              <video autoplay muted loop playsinline controls preload="metadata" poster="assets/posters/location_study_classroom.jpg"><source src="assets/videos/location_study_classroom.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline controls preload="metadata" poster="assets/posters/location_study_library.jpg"><source src="assets/videos/location_study_library.mp4" type="video/mp4"></video>
+            </div>
+            <h3>Classroom vs. library study</h3>
+            <p>The person continues the same quiet writing task across both clips. The background evidence changes the location: a classroom-like board and desks in Video A, and library shelves around the same study behavior in Video B.</p>
+          </article>
+
+          <article class="video-card">
+            <p class="taxonomy-tag">Static relation</p>
+            <div class="video-pair">
+              <video autoplay muted loop playsinline controls preload="metadata" poster="assets/posters/relation_vending_front.jpg"><source src="assets/videos/relation_vending_front.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline controls preload="metadata" poster="assets/posters/relation_vending_low.jpg"><source src="assets/videos/relation_vending_low.mp4" type="video/mp4"></video>
+            </div>
+            <h3>Front vs. low position</h3>
+            <p>The vending-machine aisle and product shelves remain the shared context. Video A shows the person standing in front of the machine, while Video B changes the spatial relation by placing the person lower, crouched beside the machine.</p>
+          </article>
+
+          <article class="video-card wide">
+            <p class="taxonomy-tag">Temporal sequence</p>
+            <div class="video-pair">
+              <video autoplay muted loop playsinline controls preload="metadata" poster="assets/posters/sequence_artist_forward.jpg"><source src="assets/videos/sequence_artist_forward.mp4" type="video/mp4"></video>
+              <video autoplay muted loop playsinline controls preload="metadata" poster="assets/posters/sequence_artist_reverse.jpg"><source src="assets/videos/sequence_artist_reverse.mp4" type="video/mp4"></video>
+            </div>
+            <h3>Forward vs. reversed drawing order</h3>
+            <p>The artist, easel, brush, and studio framing stay matched. Video A progresses from a blank canvas toward a visible blue stroke, while Video B reverses the order so the same visual states imply the opposite temporal sequence.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="citation" class="band citation">
+        <div class="citation-box">
+          <div class="copy-row">
+            <span>BibTeX</span>
+            <button type="button" class="copy-button" data-copy-citation>Copy</button>
+          </div>
+          <pre><code id="citation-bibtex">@article{huang2026no,
+  title={No Place to Hide: Benchmarking Video Hallucination with Background-Controlled Pairs},
+  author={Huang, Haojian and Chen, Harold Haodong and Luo, Meng and Du, Junjia and Xu, Shanqing and Chen, Ziheng and Huang, Yanxiang and Li, Yinchuan and Chen, Ying-Cong},
+  journal={arXiv preprint arXiv:2606.31933},
+  year={2026}
+}</code></pre>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const copyButton = document.querySelector("[data-copy-citation]");
+      const citationBlock = document.querySelector("#citation-bibtex");
+
+      copyButton?.addEventListener("click", async () => {
+        const text = citationBlock?.textContent || "";
+        try {
+          await navigator.clipboard.writeText(text);
+          copyButton.textContent = "Copied";
+          setTimeout(() => {
+            copyButton.textContent = "Copy";
+          }, 1600);
+        } catch {
+          const range = document.createRange();
+          range.selectNodeContents(citationBlock);
+          const selection = window.getSelection();
+          selection.removeAllRanges();
+          selection.addRange(range);
+        }
+      });
+    </script>
+  </body>
+</html>
